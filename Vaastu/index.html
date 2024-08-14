@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A Vaastu Property Solution</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <h1>A Vaastu Property Solution</h1>
+        <nav>
+            <ul>
+                <li><a href="#home" onclick="loadSection('hero')">Home</a></li>
+                <li><a href="#properties" onclick="loadSection('properties')">Properties</a></li>
+                <li><a href="#services" onclick="loadSection('services')">Services</a></li>
+                <li><a href="#construction" onclick="loadSection('construction')">Construction</a></li>
+                <li><a href="#contacts" onclick="loadSection('contacts')">Contacts</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="hero">
+            <div class="hero-content">
+                <h1>Find Your Dream Property with A Vaastu Property Solution</h1>
+                <form id="search-form">
+                    <label for="location">Location:</label>
+                    <select id="location" name="location">
+                        <option value="-">-</option>
+                        <option value="bangalore">Bangalore</option>
+                        <option value="other cities">Other cities</option>
+                    </select>
+
+                    <label for="property-type">Property Type:</label>
+                    <select id="property-type" name="property-type">
+                        <option value="-">-</option>
+                        <option value="house">House</option>
+                        <option value="apartment/flats">Apartment/Flats</option>
+                        <option value="commercial space">Commercial Space</option>
+                        <option value="individual houses">Individual House</option>
+                        <option value="office space">Office Space</option>
+                        <option value="factory/industries">Factory/Industries</option>
+                        <option value="godown/warehouse">Godown/Warehouse</option>
+                        <option value="plots">Plots</option>
+                        <option value="agricultural lands">Agricultural Lands</option>
+                        <option value="others">Others</option>
+                    </select>
+
+                    <label for="transaction-type">Transaction Type:</label>
+                    <select id="transaction-type" name="transaction-type" onchange="updateBudgetOptions()">
+                        <option value="-">-</option>
+                        <option value="buy">Buy</option>
+                        <option value="rent">Rent</option>
+                    </select>
+
+                    <label for="budget">Budget:</label>
+                    <select id="budget" name="budget">
+                        <option value="-">-</option>
+                    </select>
+
+                    <label for="area">Area:</label>
+                    <select id="area" name="area">
+                        <option value="-">-</option>
+                        <option value="bangalore north">Bangalore North</option>
+                        <option value="bangalore south">Bangalore South</option>
+                        <option value="bangalore east">Bangalore East</option>
+                        <option value="bangalore west">Bangalore West</option>
+                        <option value="bangalore central">Bangalore Central</option>
+                    </select>
+
+                    <button type="submit">Search</button>
+                </form>
+            </div>
+        </section>
+
+        <section id="properties">
+            <div class="row">
+                <div class="col-md-3">
+                    <h2><a href="#construction" onclick="loadSection('construction')">About Constructions</a></h2>
+                </div>
+                <div class="col-md-6 text-center">
+                    <h2>Properties</h2>
+                    <div id="property-list">
+                        <div class="property-item">
+                            <h3>Property A</h3>
+                            <p>Property Type: House</p>
+                            <button>View Details</button>
+                        </div>
+                        <div class="property-item">
+                            <h3>Property B</h3>
+                            <p>Property Type: Apartment/Flats</p>
+                            <button>View Details</button>
+                        </div>
+                        <div class="property-item">
+                            <h3>Property C</h3>
+                            <p>Property Type: Commercial Space</p>
+                            <button>View Details</button>
+                        </div>
+                        <div class="property-item">
+                            <h3>Property D</h3>
+                            <p>Property Type: Individual House</p>
+                            <button>View Details</button>
+                        </div>
+                        <div class="property-item">
+                            <h3>Property E</h3>
+                            <p>Property Type: Office Space</p>
+                            <button>View Details</button>
+                        </div>
+                        <div class="property-item">
+                            <h3>Property F</h3>
+                            <p>Property Type: Factory/Industries</p>
+                            <button>View Details</button>
+                        </div>
+                        <div class="property-item">
+                            <h3>Property G</h3>
+                            <p>Property Type: Godown/Warehouse</p>
+                            <button>View Details</button>
+                        </div>
+                        <div class="property-item">
+                            <h3>Property H</h3>
+                            <p>Property Type: Plots</p>
+                            <button>View Details</button>
+                        </div>
+                        <div class="property-item">
+                            <h3>Property I</h3>
+                            <p>Property Type: Agricultural Lands</p>
+                            <button>View Details</button>
+                        </div>
+                        <div class="property-item">
+                            <h3>Property J</h3>
+                            <p>Property Type: Others</p>
+                            <button>View Details</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <h2>Advertisement</h2>
+                    <img src="ad.jpg" alt="Advertisement">
+                </div>
+            </div>
+        </section>
+
+        <section id="services">
+            <h2>Services</h2>
+            <div class="services-content">
+                <div class="service">
+                    <h3>Vaastu Consultation</h3>
+                    <p>Detailed consultation on the selection of a construction site. We provide you with a comprehensive pictorial presentation based on Vaastu principles to ensure harmony and prosperity in your home or business.</p>
+                </div>
+                <div class="service">
+                    <h3>Construction</h3>
+                    <ul>
+                        <li>Interior Decorations</li>
+                        <li>Exterior Decorations</li>
+                        <li>Electrical Work</li>
+                        <li>Plumbing</li>
+                        <li>Modular Kitchen</li>
+                        <li>False Ceilings</li>
+                        <li>Furnishing</li>
+                        <li>Other Services</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section id="construction">
+            <h2>Construction</h2>
+            <p>Information about construction services will be displayed here.</p>
+        </section>
+
+        <section id="contacts">
+            <h2>Contacts</h2>
+            <p>Contact information will be displayed here.</p>
+        </section>
+    </main>
+ <!-- Popup Notification -->
+    <div id="popup" class="popup hidden">
+        <p>Learn more about <a href="#construction" onclick="loadSection('construction')">Our Construction Services</a> and <a href="#services" onclick="loadSection('services')">Vaastu Consultation</a>.</p>
+        <button id="close-popup">Close</button>
+    </div>
+
+    <footer>
+        <p>&copy; A Vaastu Property Solution. All rights reserved.</p>
+    </footer>
+
+    <script src="scripts.js"></script>
+</body>
+</html>

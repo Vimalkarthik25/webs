@@ -1,0 +1,249 @@
+/* General Body Styling */
+body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(to right, #6a11cb, #2575fc);
+    color: #333;
+}
+
+/* Header Styling */
+header {
+    background-color: #222;
+    padding: 1rem;
+    color: #fff;
+    text-align: center;
+}
+
+header h1 {
+    color: #1E90FF; /* Peacock blue */
+    font-size: 2.5rem;
+    margin-bottom: 0;
+}
+
+header nav ul {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    list-style: none;
+}
+
+header nav ul li a {
+    color: #FFD700; /* Gold color for links */
+    position: relative;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+header nav ul li a::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 3px;
+    background-color: #1E90FF; /* Peacock blue underline */
+    left: 0;
+    bottom: -5px;
+    transform: scaleX(0);
+    transition: transform 0.3s ease;
+}
+
+header nav ul li a:hover::after {
+    transform: scaleX(1);
+}
+
+/* Hero Section Styling */
+#hero {
+    background-image: url('hero-bg.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+}
+
+.hero-content {
+    background: rgba(0, 128, 128, 0.7); /* A translucent teal background */
+    padding: 2rem;
+    border-radius: 8px;
+    text-align: center;
+    color: #FFD700; /* Gold color for text */
+}
+
+#hero h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    color: #1E90FF; /* Peacock blue for the text */
+    text-shadow: 2px 2px 4px #000; /* Add a shadow for better visibility */
+}
+
+/* Search Form Styling */
+#search-form {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: center;
+}
+
+#search-form label, #search-form select, #search-form input, #search-form button {
+    padding: 0.75rem;
+    margin: 0.5rem;
+    color: #000;
+}
+
+#search-form input, #search-form select {
+    border-radius: 30px;
+    border: none;
+    outline: none;
+}
+
+#search-form button {
+    padding: 0.75rem 2rem;
+    border-radius: 30px;
+    border: none;
+    background-color: #28a745;
+    color: #fff;
+    cursor: pointer;
+}
+
+/* Properties Section */
+#properties .col-md-6 {
+    text-align: center;
+}
+
+#property-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: center;
+    list-style-type: none; /* Remove bullets from list items */
+    padding: 0;
+}
+
+.property-item {
+    background-color: #fff;
+    padding: 1rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 300px;
+}
+
+.property-item h3 {
+    font-size: 1.5rem;
+    color: #1E90FF;
+}
+
+.property-item p {
+    font-size: 1rem;
+    margin: 0.5rem 0;
+}
+
+.property-item button {
+    background-color: #28a745;
+    color: #fff;
+    padding: 0.5rem 1rem;
+    border-radius: 30px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.property-item button:hover {
+    background-color: #218838;
+}
+
+/* Services Section */
+#services {
+    padding: 2rem;
+    background-color: #f9f9f9;
+}
+
+#services h2 {
+    color: #1E90FF;
+    text-align: center;
+}
+
+.services-content {
+    display: flex;
+    justify-content: space-around;
+    gap: 2rem;
+}
+
+.service {
+    background-color: #fff;
+    padding: 1rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+}
+
+/* Construction Section */
+#construction {
+    padding: 2rem;
+    background-color: #f1f1f1;
+}
+
+#construction h2 {
+    color: #1E90FF;
+    text-align: center;
+}
+
+/* Contacts Section */
+#contacts {
+    padding: 2rem;
+    background-color: #f9f9f9;
+}
+
+#contacts h2 {
+    color: #1E90FF;
+    text-align: center;
+}
+
+/* Footer Styling */
+footer {
+    background-color: #222;
+    color: #fff;
+    padding: 1rem;
+    text-align: center;
+}
+
+/* Popup Styling */
+.popup {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: rgba(0, 128, 128, 0.9); /* Teal with transparency */
+    color: #fff;
+    padding: 1rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+    z-index: 1000;
+    width: 300px;
+    display: none;
+}
+
+.popup a {
+    color: #FFD700; /* Gold color for links */
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+.popup button {
+    background-color: #FFD700; /* Gold color for button */
+    color: #000;
+    border: none;
+    padding: 0.5rem;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.popup button:hover {
+    background-color: #FFA500; /* Darker gold on hover */
+}
+
+.hidden {
+    display: none;
+}
