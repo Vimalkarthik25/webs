@@ -1,5 +1,7 @@
 import React, { useState } from 'react';
 import './Home.css';
+import ImageSlider from '../imageSlider/ImageSlider';
+import TopProjects from './TopProjects/TopProjects';
 
 const Home = () => {
   const [budgetOptions, setBudgetOptions] = useState([]);
@@ -19,6 +21,7 @@ const Home = () => {
 
   return (
     <section>
+      
       <div className="home-content">
         <h1>Find Your Dream Property with A Vaastu Property Solution</h1>
         <form id="search-form">
@@ -83,6 +86,11 @@ const Home = () => {
 
           <button type="submit">Search</button>
         </form>
+      </div>
+
+      <div>
+      <ImageSlider/>
+      <TopProjects/>
       </div>
     </section>
   );
