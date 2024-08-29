@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import './Home.css';
 import ImageSlider from '../imageSlider/ImageSlider';
 import TopProjects from './TopProjects/TopProjects';
+import ProjectsFocus from './ProjectsFocus/ProjectsFocus';
 
 const Home = () => {
   const [budgetOptions, setBudgetOptions] = useState([]);
@@ -91,6 +92,7 @@ const Home = () => {
       <div>
       <ImageSlider/>
       <TopProjects/>
+      <ProjectsFocus/>
       </div>
     </section>
   );

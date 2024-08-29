@@ -1,0 +1,169 @@
+body {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #f7f9fc;
+    margin: 0;
+  }
+  
+  .projectsFocus-container {
+    max-width: 1200px;
+    width: 100%;
+    padding: 50px 20px;
+    position: relative;
+    overflow: hidden; /* Hide overflow to keep buttons visible */
+  }
+  .projectsFocus-header{
+ margin: 0px 50px;
+ margin-top: 40px;
+ font-size: 20px;
+  }
+  .projectsFocus-content {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+    width: 100%; /* Ensures it takes up the full width of the container */
+  }
+  
+  .projectsFocus-card {
+    min-width: 500px; /* Adjust based on the card's desired size */
+    max-width: 500px; /* Ensure cards don't grow larger than this width */
+    background-size: cover;
+    background-position: center;
+    border-radius: 12px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    margin: 0 15px;
+    position: relative;
+    color: #fff; /* Ensure text is visible on top of the background image */
+    text-decoration: none; /* Remove underline from the link */
+    cursor: pointer; /* Change cursor to pointer */
+  }
+  
+  .projectsFocus-card:hover {
+    transform: translateY(-10px);
+  }
+  
+  .projectsFocus-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.4); /* Dark overlay for better text visibility */
+    z-index: 1; /* Ensure overlay is above card background but below text */
+  }
+  
+  .projectsFocus-cardContent {
+    position: relative;
+    padding: 20px;
+    /* text-align: center; */
+    z-index: 2; /* Ensure content is above the overlay */
+  }
+  
+  .projectsFocus-name {
+    font-size: 20px;
+    font-weight: 700;
+    color: #fff;
+    margin-top: 50px;
+    margin-bottom: 10px;
+  }
+  
+  .projectsFocus-description {
+    font-size: 14px;
+    color: #ddd;
+    font-weight: 500;
+    margin-bottom: 10px;
+  }
+  
+  .projectsFocus-spacilities
+   {
+    
+    font-size: 18px;
+    margin-bottom: 5px;
+    margin-left: 200px;
+  }
+  .projectsFocus-location,
+  .projectsFocus-rant{
+    margin-left: 200px;
+    font-size: 12px;
+    color: #ccc;
+    
+  }
+  
+  .projectsFocus-sliderButton {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: none;
+    border: none;
+    font-size: 30px;
+    color: #007bff;
+    cursor: pointer;
+    transition: color 0.3s ease;
+    z-index: 10; /* Ensure buttons are above the cards */
+  }
+  .projectsFocus-prev,
+  .projectsFocus-next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5); /* Base background color */
+    color: white; /* Text color */
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    z-index: 1;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease; /* Smooth transitions */
+  }
+  
+  .projectsFocus-prev:hover,
+  .projectsFocus-next:hover {
+    color: black; /* Text color on hover */
+  }
+  
+  .projectsFocus-prev {
+    left: 15px; /* Position the previous button */
+    font-size: 16px; /* Font size */
+    background-color: #3498db; /* Blue background for previous button */
+    padding: 12px 16px; /* Padding */
+    border-radius: 5px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Shadow effect */
+  }
+  
+  .projectsFocus-prev:hover {
+    background-color: #2980b9; /* Darker blue on hover */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); /* Enhanced shadow on hover */
+  }
+  
+  .projectsFocus-next {
+    right: 15px; /* Position the next button */
+    font-size: 16px; /* Font size */
+    background-color: #3498db; /* Blue background for next button */
+    padding: 12px 16px; /* Padding */
+    border-radius: 5px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Shadow effect */
+  }
+  
+  .projectsFocus-next:hover {
+    background-color: #2980b9; /* Darker blue on hover */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); /* Enhanced shadow on hover */
+  }
+  
+  
+  @media screen and (max-width: 768px) {
+    .projectsFocus-container {
+      padding: 30px 10px;
+    }
+  
+    .projectsFocus-prev, .projectsFocus-next {
+      font-size: 24px; /* Adjust button size for smaller screens */
+    }
+  
+    .projectsFocus-card {
+      min-width: 300px; /* Adjust card width for smaller screens */
+      max-width: 300px; /* Ensure cards don't grow larger than this width */
+      margin: 0 10px;
+    }
+  }
+  

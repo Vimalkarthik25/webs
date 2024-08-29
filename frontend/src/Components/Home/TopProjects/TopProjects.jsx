@@ -69,6 +69,10 @@ const TopProjects = () => {
 
   return (
     <div className="topProjects">
+        <div className='topProjects-header'>
+        <h1>Top Projects</h1>
+        <p>Best developers in Bengaluru to explore</p>
+        </div>
       <div className="carousel-container">
         <div className="carousel-wrapper" style={{ transform: `translateX(-${currentIndex * 500}px)` }}>
           {slides.map((slide, index) => (

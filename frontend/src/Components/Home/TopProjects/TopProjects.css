@@ -17,6 +17,9 @@
     
   }
 
+  .topProjects-header h1 {
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+  }
   
   @media (min-width: 43.75em) {
     .topProjects {
@@ -119,14 +122,37 @@
   }
   
   .carousel-button.prev {
-    left: 0;
-    font-size: 20px;
-    border-radius: 100%;
-  }
-  
-  .carousel-button.next {
-    right: 0;
-    font-size: 20px;
-    border-radius: 100%;
-  }
+    left: 15px;
+    font-size: 16px;
+    background-color: #3498db;
+    color: white;
+    padding: 12px 16px;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border: none;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.carousel-button.prev:hover {
+    background-color: #2980b9;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+.carousel-button.next {
+    right: 15px;
+    font-size: 16px;
+    background-color: #3498db;
+    color: white;
+    padding: 12px 16px;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border: none;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.carousel-button.next:hover {
+    background-color: #2980b9;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+
   
